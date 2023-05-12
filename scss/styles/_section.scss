@@ -1,0 +1,18 @@
+.s-1 {
+  @include goflex;
+  @include mysize;
+  & p {
+    @include img-p;
+  }
+}
+
+// section-2
+
+.s-2 {
+  @extend @include goflex;
+  margin-top: 60px;
+
+  .hpn-now {
+    padding-bottom: 40px;
+  }
+}

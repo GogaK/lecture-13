@@ -1,0 +1,31 @@
+header {
+  header {
+    @include goflex;
+  }
+
+  & a {
+    @include mylogo;
+    &:hover {
+      color: blueviolet;
+    }
+  }
+}
+
+nav {
+  width: 180px;
+
+  ul {
+    display: flex;
+    color: $mycolorheader;
+    &:hover {
+      color: blueviolet;
+    }
+  }
+  li {
+    padding-right: 50px;
+  }
+}
+
+nav {
+  @include mynav;
+}

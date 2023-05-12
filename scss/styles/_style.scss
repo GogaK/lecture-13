@@ -1,0 +1,81 @@
+@import "header";
+
+body {
+  background-color: rgb(246, 243, 243);
+}
+
+// section - 1
+.s-1 {
+  @extend %mycontainer;
+  @include goflex;
+  @include mysize;
+  & p {
+    @include img-p;
+  }
+}
+
+// section-2
+
+.s-2 {
+  @include goflex;
+  margin-top: 60px;
+
+  .hpn-now {
+    padding-bottom: 40px;
+  }
+}
+.container {
+  @include mycontainer;
+}
+.trending {
+  @include trending;
+}
+
+.card-wrapper {
+  @include mycontainer;
+  @include mysize;
+  background-color: $mycolor2;
+}
+
+.card-wrapper-2 {
+  @include mycontainer;
+  @include mysize;
+  display: flex;
+  justify-content: space-between;
+}
+.c1-img {
+  @include mysize;
+  padding-bottom: 40px;
+  background-color: $mycolor2;
+}
+
+.c2-img {
+  @include mysize;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+.lorem {
+  width: 300px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  & a {
+    color: $mycolor2;
+    padding-bottom: 7px;
+  }
+
+  .foot-a {
+    @include foot-a;
+  }
+  .logo-2 {
+    @include logo-2;
+  }
+}
+
+.footer-end {
+  @include footer-end;
+}

@@ -1,0 +1,15 @@
+{
+  "git.ignoreMissingGitWarning": true,
+  "window.zoomLevel": 2,
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "savePath:/../css/"
+    }
+  ],
+  "workbench.colorTheme": "Monokai",
+  "liveSassCompile.settings.includeItems": []
+}
